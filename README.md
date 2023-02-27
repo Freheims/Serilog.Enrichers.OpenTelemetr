@@ -9,14 +9,14 @@ Install-Package Serilog.Enrichers.OpenTelemetry
 Then you can apply the enrichers to your `LoggerConfiguration`:
 ```csharp
 Log.Logger = new LoggerConfiguration()
-    .Enrich.WithTraceId()
+    .Enrich.WithOpenTelemetryTraceId()
     // ...other configuration...
     .CreateLogger();
 ```
 
-The `WithTraceId()` enricher will add a `TraceId` property to the produced events.
+The `WithOpenTelemetryTraceId()` enricher will add a `TraceId` property to the produced events.
 
 ## Included enrichers
 The package includes the following enrichers:
-* `WithTraceId()` adds a `TraceId` to track logs for the current web request.
-* `WithSpanId()` adds a `SpanId` to track logs for the current span.
+* `WithOpenTelemetryTraceId()` adds a `TraceId` to track logs for the current web request.
+* `WithOpenTelemetrySpanId()` adds a `SpanId` to track logs for the current span.
