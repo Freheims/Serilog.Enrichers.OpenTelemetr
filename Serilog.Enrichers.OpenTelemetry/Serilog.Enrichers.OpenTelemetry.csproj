@@ -8,7 +8,6 @@
         <Nullable>enable</Nullable>
         <PackageId>Serilog.Enrichers.OpenTelemetry</PackageId>
         <Authors>Fredrik Heimsæter</Authors>
-        <Owner>Fredrik Heimsæter</Owner>
         <Copyright>Fredrik Heimsæter</Copyright>
         <NeutralLanguage>en</NeutralLanguage>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
